@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+string rev(string::iterator & it)
+{
+	char c = *it;
+
+	if(c != 'x')
+		return string(1, c);
+	
+	string tl = rev(++it);
+	string tr = rev(++it);
+	string bl = rev(++it);
+	string br = rev(++it);
+
+	return bl + br + tl + tr;
+
+}
+
+int main ()
+{
+	string instr;
+	int C;
+	cin >> C;
+
+	while(C--)
+	{
+		cin >> instr;
+		cout << rev(instr.begin()) << endl;
+	}
+}

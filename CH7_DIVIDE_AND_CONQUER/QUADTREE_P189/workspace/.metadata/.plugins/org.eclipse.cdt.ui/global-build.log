@@ -1,0 +1,32 @@
+20:06:39 **** Build of configuration Debug for project quadtree ****
+make all 
+Building file: /media/emjay/20484C78484C4EAA/Programmer/Algospot/CH7_DIVIDE_AND_CONQUER/QUADTREE_P189/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "/media/emjay/20484C78484C4EAA/Programmer/Algospot/CH7_DIVIDE_AND_CONQUER/QUADTREE_P189/main.cpp"
+/media/emjay/20484C78484C4EAA/Programmer/Algospot/CH7_DIVIDE_AND_CONQUER/QUADTREE_P189/main.cpp: In function ‘int main()’:
+/media/emjay/20484C78484C4EAA/Programmer/Algospot/CH7_DIVIDE_AND_CONQUER/QUADTREE_P189/main.cpp:32:26: error: invalid initialization of non-const reference of type ‘std::__cxx11::basic_string<char>::iterator& {aka __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >&}’ from an rvalue of type ‘std::__cxx11::basic_string<char>::iterator {aka __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >}’
+   cout << rev(instr.begin()) << endl;
+                          ^
+/media/emjay/20484C78484C4EAA/Programmer/Algospot/CH7_DIVIDE_AND_CONQUER/QUADTREE_P189/main.cpp:7:8: note:   initializing argument 1 of ‘std::__cxx11::string rev(std::__cxx11::basic_string<char>::iterator&)’
+ string rev(string::iterator & it)
+        ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+20:45:39 **** Incremental Build of configuration Debug for project quadtree ****
+make all 
+Building file: /media/emjay/20484C78484C4EAA/Programmer/Algospot/CH7_DIVIDE_AND_CONQUER/QUADTREE_P189/main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "/media/emjay/20484C78484C4EAA/Programmer/Algospot/CH7_DIVIDE_AND_CONQUER/QUADTREE_P189/main.cpp"
+Finished building: /media/emjay/20484C78484C4EAA/Programmer/Algospot/CH7_DIVIDE_AND_CONQUER/QUADTREE_P189/main.cpp
+ 
+Building target: quadtree
+Invoking: GCC C++ Linker
+g++  -o "quadtree"  ./main.o   
+Finished building target: quadtree
+ 
+20:45:46 **** Incremental Build of configuration Debug for project quadtree ****
+make all 
+make: Nothing to be done for 'all'.
+20:45:59 **** Incremental Build of configuration Debug for project quadtree ****
+make all 
+make: Nothing to be done for 'all'.
