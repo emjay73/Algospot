@@ -4,7 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-
+#include <algorithm>
 using namespace std;
 
 
@@ -12,9 +12,10 @@ using namespace std;
 // multiply result = sum( value * power(10, index) )
 void normalize(vector<int>& num)
 {
+
 	num.emplace_back(0);
 
-	for(int i=0; i<num.size(); ++i)
+	for(int i=0; i<num.size()-1; ++i)
 	{
 		if (num[i] < 0)
 		{
@@ -29,6 +30,9 @@ void normalize(vector<int>& num)
 			num[i] %= 10;
 		}
 	}
+
+	while (!num.empty() && num.back() == 0) num.pop_back();
+	
 }
 
 vector<int> multiply(const vector<int> & a, const vector<int> & b)
@@ -51,8 +55,10 @@ vector<int> multiply(const vector<int> & a, const vector<int> & b)
 // a+=b*(10^k)
 void addTo(vector<int> & a, const vector<int> & b, int k)
 {
-	for(int i=0; i<a.size(); ++i)
-		a[i] += b[i] * pow(10, k);
+	if (a.size() < k+  b.size())
+		a.resize(k+ b.size(), 0);
+	for (int i = 0; i < b.size(); ++i)
+		a[i + k] += b[i];// *pow(10, k);
 	
 	normalize(a);
 }
@@ -61,7 +67,7 @@ void addTo(vector<int> & a, const vector<int> & b, int k)
 // a-= b
 void subFrom (vector <int> & a, const vector<int> & b)
 {
-	for(int i=0; i<a.size(); ++i)
+	for(int i=0; i<b.size(); ++i)
 		a[i] -=b[i];
 
 	normalize(a);
@@ -69,6 +75,17 @@ void subFrom (vector <int> & a, const vector<int> & b)
 
 vector<int> karatsuba(vector<int> & A, vector<int> & B)
 {
+
+	/*cout << "A" << endl;
+	for (auto a : A)
+		cout << a << " ";
+	cout << endl;
+
+	cout << "B" << endl;
+	for (auto b : B)
+		cout << b << " ";
+	cout << endl;
+*/
 
 	int an = A.size();
 	int bn = B.size();
