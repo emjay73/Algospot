@@ -22,13 +22,13 @@ void print_tree_preorder(TreeNode* root)
 		print_tree_preorder(root->children[c]);	
 }
 
-int height(TreeNode* root)
+int compute_tree_height(TreeNode* root)
 {
 	int h = 0; 
 
 	for (int c = 0; c < root->children.size(); ++c)
 	{
-		h = max(h, 1+height(root->children[c]));
+		h = max(h, 1+ compute_tree_height(root->children[c]));
 	}
 	return h;
 }
