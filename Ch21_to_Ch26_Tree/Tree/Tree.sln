@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnionFind", "UnionFind\Unio
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P0772_EDITORWARS", "P0772_EDITORWARS\P0772_EDITORWARS.vcxproj", "{A5BAACE4-66F1-4F5F-8444-A3FFB1008707}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Trie", "Trie\Trie.vcxproj", "{D8243833-80EF-4A0E-9396-69A83277A290}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +153,14 @@ Global
 		{A5BAACE4-66F1-4F5F-8444-A3FFB1008707}.Release|x64.Build.0 = Release|x64
 		{A5BAACE4-66F1-4F5F-8444-A3FFB1008707}.Release|x86.ActiveCfg = Release|Win32
 		{A5BAACE4-66F1-4F5F-8444-A3FFB1008707}.Release|x86.Build.0 = Release|Win32
+		{D8243833-80EF-4A0E-9396-69A83277A290}.Debug|x64.ActiveCfg = Debug|x64
+		{D8243833-80EF-4A0E-9396-69A83277A290}.Debug|x64.Build.0 = Debug|x64
+		{D8243833-80EF-4A0E-9396-69A83277A290}.Debug|x86.ActiveCfg = Debug|Win32
+		{D8243833-80EF-4A0E-9396-69A83277A290}.Debug|x86.Build.0 = Debug|Win32
+		{D8243833-80EF-4A0E-9396-69A83277A290}.Release|x64.ActiveCfg = Release|x64
+		{D8243833-80EF-4A0E-9396-69A83277A290}.Release|x64.Build.0 = Release|x64
+		{D8243833-80EF-4A0E-9396-69A83277A290}.Release|x86.ActiveCfg = Release|Win32
+		{D8243833-80EF-4A0E-9396-69A83277A290}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
