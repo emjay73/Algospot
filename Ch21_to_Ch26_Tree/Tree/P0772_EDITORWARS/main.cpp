@@ -128,29 +128,21 @@ int main()
 
 		BipartiteUnionFind buf(N);
 
-		bool paradox = true;
+		bool paradox = false;
 		for (int m = 0; m < M; ++m)
 		{
 			cin >> stance >> idxa >> idxb;
-			if (stance == "ACK")
+			if (!paradox && stance == "ACK")
 			{
 				paradox = !buf.ack(idxa, idxb);
 				if (paradox)
-				{
-					cout << "CONTRADICTION AT " << m + 1 << endl;
-					break;
-				}
-					
+					cout << "CONTRADICTION AT " << m + 1 << endl;					
 			}				
-			else
+			else if(!paradox )
 			{
 				paradox = !buf.dis(idxa, idxb);
 				if (paradox)
-				{
-					cout << "CONTRADICTION AT " << m + 1 << endl;
-					break;
-				}
-					
+					cout << "CONTRADICTION AT " << m + 1 << endl;				
 			}
 
 		}
