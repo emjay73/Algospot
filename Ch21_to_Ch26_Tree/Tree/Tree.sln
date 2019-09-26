@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RMQ_range_minimum_query", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P0746_MORDOR", "P0746_MORDOR\P0746_MORDOR.vcxproj", "{71763D97-124B-44E3-B006-2B08FF713A79}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P0747_FAMILYTREE", "P0747_FAMILYTREE\P0747_FAMILYTREE.vcxproj", "{6B38C1E1-9631-444B-8746-FB17A8F9EE78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{71763D97-124B-44E3-B006-2B08FF713A79}.Release|x64.Build.0 = Release|x64
 		{71763D97-124B-44E3-B006-2B08FF713A79}.Release|x86.ActiveCfg = Release|Win32
 		{71763D97-124B-44E3-B006-2B08FF713A79}.Release|x86.Build.0 = Release|Win32
+		{6B38C1E1-9631-444B-8746-FB17A8F9EE78}.Debug|x64.ActiveCfg = Debug|x64
+		{6B38C1E1-9631-444B-8746-FB17A8F9EE78}.Debug|x64.Build.0 = Debug|x64
+		{6B38C1E1-9631-444B-8746-FB17A8F9EE78}.Debug|x86.ActiveCfg = Debug|Win32
+		{6B38C1E1-9631-444B-8746-FB17A8F9EE78}.Debug|x86.Build.0 = Debug|Win32
+		{6B38C1E1-9631-444B-8746-FB17A8F9EE78}.Release|x64.ActiveCfg = Release|x64
+		{6B38C1E1-9631-444B-8746-FB17A8F9EE78}.Release|x64.Build.0 = Release|x64
+		{6B38C1E1-9631-444B-8746-FB17A8F9EE78}.Release|x86.ActiveCfg = Release|Win32
+		{6B38C1E1-9631-444B-8746-FB17A8F9EE78}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
