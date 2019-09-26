@@ -1,5 +1,9 @@
 #pragma once
 
+// good for searching string
+// O(M) : M is length of string to be searched
+
+
 #include <cstring>
 // number of upper case alphabet
 const int ALPHABETS = 26;
