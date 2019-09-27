@@ -1,0 +1,54 @@
+﻿  main.cpp
+g:\lge_common\github_emjay73\algospot\ch21_to_ch26_tree\tree\mst_prim\mst_prim.h(63): warning C4018: '<': signed/unsigned mismatch
+g:\lge_common\github_emjay73\algospot\ch21_to_ch26_tree\tree\mst_prim\mst_prim.h(68): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\lge_common\github_emjay73\algospot\ch21_to_ch26_tree\tree\p0979_lan\main.cpp(51): warning C4018: '<': signed/unsigned mismatch
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\utility(203): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(637): note: see reference to function template instantiation 'std::pair<int,int>::pair<float,int,void,0>(std::pair<float,int> &&) noexcept' being compiled
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(637): note: see reference to function template instantiation 'std::pair<int,int>::pair<float,int,void,0>(std::pair<float,int> &&) noexcept' being compiled
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(755): note: see reference to function template instantiation 'void std::allocator<_Ty>::construct<_Objty,std::pair<float,int>>(_Objty *,std::pair<float,int> &&)' being compiled
+          with
+          [
+              _Ty=std::pair<int,int>,
+              _Objty=std::pair<int,int>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(755): note: see reference to function template instantiation 'void std::allocator<_Ty>::construct<_Objty,std::pair<float,int>>(_Objty *,std::pair<float,int> &&)' being compiled
+          with
+          [
+              _Ty=std::pair<int,int>,
+              _Objty=std::pair<int,int>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(894): note: see reference to function template instantiation 'void std::allocator_traits<_Alloc>::construct<_Ty,std::pair<float,int>>(std::allocator<_Ty> &,_Objty *,std::pair<float,int> &&)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::pair<int,int>>,
+              _Ty=std::pair<int,int>,
+              _Objty=std::pair<int,int>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(893): note: see reference to function template instantiation 'void std::allocator_traits<_Alloc>::construct<_Ty,std::pair<float,int>>(std::allocator<_Ty> &,_Objty *,std::pair<float,int> &&)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::pair<int,int>>,
+              _Ty=std::pair<int,int>,
+              _Objty=std::pair<int,int>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(933): note: see reference to function template instantiation 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<std::pair<int,int>,std::pair<float,int>>(_Ty *,std::pair<float,int> &&)' being compiled
+          with
+          [
+              _Ty=std::pair<int,int>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(932): note: see reference to function template instantiation 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<std::pair<int,int>,std::pair<float,int>>(_Ty *,std::pair<float,int> &&)' being compiled
+          with
+          [
+              _Ty=std::pair<int,int>
+          ]
+  g:\lge_common\github_emjay73\algospot\ch21_to_ch26_tree\tree\mst_prim\mst_prim.h(57): note: see reference to function template instantiation 'void std::vector<std::pair<int,int>,std::allocator<_Ty>>::emplace_back<std::pair<float,int>>(std::pair<float,int> &&)' being compiled
+          with
+          [
+              _Ty=std::pair<int,int>
+          ]
+  g:\lge_common\github_emjay73\algospot\ch21_to_ch26_tree\tree\mst_prim\mst_prim.h(57): note: see reference to function template instantiation 'void std::vector<std::pair<int,int>,std::allocator<_Ty>>::emplace_back<std::pair<float,int>>(std::pair<float,int> &&)' being compiled
+          with
+          [
+              _Ty=std::pair<int,int>
+          ]
+  P0979_LAN.vcxproj -> G:\LGE_common\GitHub_emjay73\Algospot\Ch21_to_Ch26_Tree\Tree\Debug\P0979_LAN.exe

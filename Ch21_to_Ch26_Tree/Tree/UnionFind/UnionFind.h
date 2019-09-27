@@ -11,7 +11,7 @@
 
 using namespace std;
 
-struct NaiveDisjointSet {
+typedef struct NaiveDisjointSet {
 	vector<int> parent; // of element
 	vector<int> rank; // depth (has value only if index equals root)
 
@@ -45,4 +45,4 @@ struct NaiveDisjointSet {
 		// only in this case, depth increases by 1
 		if (rank[ra] == rank[rb]) ++rank[rb];
 	}
-};
+} DisjointSet;
